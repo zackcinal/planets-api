@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from "./components/Nav.jsx"
+import Home from "./screens/Home.jsx"
+import Planets from "./screens/Planets.jsx"
+import PlanetDetail from "./screens/PlanetDetail.jsx"
+import PlanetCreate from "./screens/PlanetCreate.jsx"
+import PlanetEdit from "./screens/PlanetEdit"
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/planets" element={<Planets />} />
+        <Route path="/planets/:id" element={<PlanetDetail />} />
+        <Route path="/add-planet" element={<PlanetCreate />} />
+        <Route path="/planets/:id/edit" element={<PlanetEdit />} />
+      </Routes>
     </div>
   );
 }
