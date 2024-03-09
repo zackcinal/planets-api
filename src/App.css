@@ -1,3 +1,16 @@
+*{
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   background-image: url(https://i.pinimg.com/originals/12/c1/47/12c147d46a861164127d4a8a536f1367.png);
   background-size: 100%;
@@ -55,6 +68,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 50px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .planets-container img {
@@ -67,6 +81,12 @@ a {
   display: flex;
   text-align: center;
   padding: 10px;
+}
+
+.planet-container img:hover {
+  width: 210px;
+  height: 210px;
+  transition: 0.2s ease-in;
 }
 
 .App {
