@@ -1,1 +1,1 @@
-# Planets API
+# Planets API v1
