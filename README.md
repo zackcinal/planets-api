@@ -21,7 +21,7 @@ This API provides a comprehensive and convenient way to access detailed informat
 | What    | Description |
 | -------- | ------- |
 | Authentication  |  Free to use, no authentication required  |
-| Base Url | -     |
+| Base Url | https://planets-apiz.netlify.app    |
 | Current Version    | v1.0|
 
 
