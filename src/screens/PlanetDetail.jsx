@@ -25,17 +25,17 @@ function PlanetDetail() {
   return (
     <div className='planet-detail'>
       <h1 className='detail-h1'>{planet.name}</h1>
-      <img src={planet.photo} alt={planet.name} />
-      <p>Mass:{planet.mass}</p>
-      <p>Diameter:{planet.diameter}</p>
-      <p>Mean Radius:{planet.meanRadius}</p>
-      <p>Density:{planet.density}</p>
-      <p>Gravity:{planet.gravity}</p>
-      <p>Escape Velocity:{planet.escapeVelocity}</p>
-      <p>Distance from Sun:{planet.distanceFromSun}</p>
-      <p>Orbital Period:{planet.orbitalPeriod}</p>
-      <p>Day Lenght:{planet.dayLength}</p>
-      <p>Moons:{planet.moons}</p>
+      <img className="detail-img" src={planet.photo} alt={planet.name} />
+      <p><span className='p-element'>Mass</span><br />{planet.mass}</p>
+      <p><span className='p-element'>Diameter</span><br />{planet.diameter}</p>
+      <p><span className='p-element'>Mean Radius</span><br />{planet.meanRadius}</p>
+      <p><span className='p-element'>Density</span><br />{planet.density}</p>
+      <p><span className='p-element'>Gravity</span><br />{planet.gravity}</p>
+      <p><span className='p-element'>Escape Velocity</span><br />{planet.escapeVelocity}</p>
+      <p><span className='p-element'>Distance from Sun</span><br />{planet.distanceFromSun}</p>
+      <p><span className='p-element'>Orbital Period</span><br />{planet.orbitalPeriod}</p>
+      <p><span className='p-element'>Day Lenght</span><br />{planet.dayLength}</p>
+      <p><span className='p-element'>Moons</span><br />{planet.moons}</p>
       <div className='detail-button'>
         <Link to={`/planets/${id}/edit`}>
           <button className='edit-button'>EDIT</button>

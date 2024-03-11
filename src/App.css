@@ -156,10 +156,19 @@ a {
   font-family: "Rubik", sans-serif;
 }
 
+.planet-detail p {
+  text-align: center;
+}
+
 .planet-detail img{
   width: 250px;
   height: auto;
   border-radius: 50%;
+}
+
+span.p-element {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .detail-h1{
@@ -230,6 +239,11 @@ a .edit-button{
   color: black;
 }
 
+img.detail-img{
+  width: 250px;
+  height: 250px;
+}
+
 @media (max-width: 600px) {
   .home{ 
     height: 20vh;
@@ -238,5 +252,6 @@ a .edit-button{
 
   body{
     background-image: url(https://i.pinimg.com/736x/a5/78/7a/a5787a568af1959bfcdfd82e79b9eabf.jpg);
+    background-repeat: repeat;
   }
 }

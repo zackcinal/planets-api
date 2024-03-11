@@ -112,8 +112,8 @@ function PlanetCreate() {
         />
         <input
           type="number"
-          min={0}
           placeholder="Moons"
+          min={0}
           name="moons"
           value={planet.moons}
           onChange={handleChange}
